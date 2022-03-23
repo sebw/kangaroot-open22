@@ -10,6 +10,8 @@ The breakout will include a live demo where we will illustrate runtime security,
 
 ## roxctl
 
+Create your API token under Platform Configuration > Integrations > Authentication Tokens > API Token
+
 
 ```bash
 export ROX_CENTRAL_ADDRESS=myacs.example.org:443

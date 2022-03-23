@@ -16,7 +16,7 @@ spec:
         affected-by: cve-2021-44228
     spec:
       containers:
-      - image: quay.io/apoczeka/log4shell-vuln:latest
+      - image: quay.io/swains/log4shell-vuln:latest
         imagePullPolicy: Always
         name: log4shell-app
         ports:
