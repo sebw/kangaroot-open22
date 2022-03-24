@@ -1,24 +1,25 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: log4shell-deploy1
+  name: log4shell
   labels:
-    app: log4shell-app1
+    app: log4shell
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: log4shell-app1
+      app: log4shell
   template:
     metadata:
       labels:
-        app: log4shell-app1
+        app: log4shell
         affected-by: cve-2021-44228
+        demo: open22
     spec:
       containers:
-      - image: quay.io/swains/log4shell-vuln:latest
+      - image: quay.io/swains/log4shell:latest
         imagePullPolicy: Always
-        name: log4shell-app
+        name: log4shell
         ports:
         - containerPort: 8080
           protocol: TCP
