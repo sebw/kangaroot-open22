@@ -17,7 +17,7 @@ spec:
         demo: open22
     spec:
       containers:
-      - image: quay.io/swains/log4shell:latest
+      - image: ghcr.io/sebw/log4shell:latest
         imagePullPolicy: Always
         name: log4shell
         ports:
